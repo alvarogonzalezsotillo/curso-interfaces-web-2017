@@ -31,3 +31,38 @@ aside {
   font-size: 1em;
   box-sizing: border-box;
 }
+
+@media all and (max-width: 800px) {
+    body{
+        background: pink;
+        
+    }
+
+    article{
+        background-image: url(img/content-is-like-water-3.jpg);
+        height: 400px;
+        background-size: 100%;
+    }
+
+}
+
+
+@media all and (max-width: 300px) {
+    body{
+        background: black;
+        
+    }
+
+    article{
+        width: 100%;
+        background-image: url(img/content-is-like-water-1.jpg);
+        height: 200px;
+        background-size: 100%;
+    }
+
+    aside{
+        width: 100%;
+        float: none;
+    }
+}
+
