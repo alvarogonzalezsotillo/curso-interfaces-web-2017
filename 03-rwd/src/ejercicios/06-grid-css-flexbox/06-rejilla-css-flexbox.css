@@ -2,14 +2,18 @@ div {
   box-sizing: border-box;
 }
 .row {
-    
+    border: 10px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .element {
     border: 10px solid green;
     padding: 10px;
     margin: 10px;
     width: 15%;
-    float:left
+    --float:left
 }
 .image {
     border: 10px solid blue;
@@ -20,4 +24,55 @@ div {
     border: 10px solid red;
     padding: 10px;
     margin: 10px;
+}
+
+@media all and (min-width: 0px) {
+    body:before{
+        content: "0";
+        font-size: 80px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .element{
+        width: 95%;
+        flex-grow: 1;
+    }
+}
+
+
+@media all and (min-width: 530px) {
+    body:before{
+        content: "530";
+    }
+
+
+    .element{
+        width: 45%;
+    }
+
+}
+
+
+@media all and (min-width: 800px) {
+    body:before{
+        content: "800";
+    }
+
+    .element{
+        width: 30%;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    body:before{
+        content: "1024";
+    }
+
+    .element{
+        width: 14%;
+    }
+
 }

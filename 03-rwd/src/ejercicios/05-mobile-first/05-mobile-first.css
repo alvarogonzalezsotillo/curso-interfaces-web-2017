@@ -29,3 +29,36 @@ aside {
   font-size: 1em;
   box-sizing: border-box;
 }
+
+@media all and (min-width: 800px) {
+    body{
+        background: pink;
+        
+    }
+
+    article{
+        float: left;
+        width: 70%;
+        background-image: url(img/content-is-like-water-3.jpg);
+    }
+
+    aside{
+        float: right;
+        width: 30%;
+    }
+
+}
+
+@media all and (min-width: 1000px) {
+    body{
+        background: yellow;
+        
+    }
+
+    article{
+        background-image: url(img/content-is-like-water-5.jpg);
+        height: 400px;
+    }
+
+
+}
