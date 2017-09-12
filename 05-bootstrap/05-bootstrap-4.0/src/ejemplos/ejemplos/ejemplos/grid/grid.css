@@ -25,3 +25,38 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+
+@media( min-width: 0px){
+    .mediadebug:before{
+        content: "0px";
+        border: 4px;
+        border-color: blue;
+        border-style: dotted;
+    }
+}
+
+@media (min-width: 576px) {
+    .mediadebug:before{
+        content: "576px";
+    }
+}
+
+@media (min-width: 768px) {
+    .mediadebug:before{
+        content: "768px";
+    }
+}
+
+@media (min-width: 992px) {
+    .mediadebug:before{
+        content: "992px";
+    }
+}
+
+@media (min-width: 1200px) {
+    .mediadebug:before{
+        content: "1200px";
+    }
+}
+
